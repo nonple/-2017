@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar color="secondary">
+       <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title align="center">
+      PictogramPage
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+ <ion-label align="center"><h2>무엇을 하고 싶은가요 </h2></ion-label>
+	<ion-item>
+	  <ion-select [(ngModel)]="object" okText="선택" cancelText="취소" >
+	    <ion-option value="bus">공항버스</ion-option>
+	    <ion-option>출구</ion-option>
+	    <ion-option>예약</ion-option>
+	  </ion-select>
+	</ion-item>
+	<ion-item>
+	   <ion-select [(ngModel)]="action" okText="선택" cancelText="취소" >
+	    <ion-option value="where">어디</ion-option>
+	    <ion-option>어떻게</ion-option>
+	    <ion-option>왜</ion-option>
+	  </ion-select>
+	</ion-item>
+
+</ion-content>
